@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> Student Registation</title>
+</head>
+<body class="bg-purple-200 min-h-screen py-10">
+    <div class="container max-w-3xl mx-auto space-y-6">
+        <form id="form" action="new.html">
+            <div class="header bg-white border-t-8 border-purple-600 rounded-lg shadow p-8">
+                <h1 class="text-3xl font-bold text-gray-800">Student Registation Form</h1>
+                <P class="text-gray-600 mt-2">Please fill out this form carefully</P>
+                <p class="text-red-500 mt-4 text-sm">Required*</p>
+            </div>
+            <div class="input-group bg-white rounded-lg shadow p-6 mt-3">
+                <label for="fname" class="block text-lg font-medium text-gray-800 ">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error "></div>
+            </div>
+            <div class="input-group  bg-white rounded-lg shadow p-6 mt-3">
+                <label for="lname" class="block text-lg font-medium text-gray-800">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error"></div>
+            </div>
+            <div class="input-group  bg-white rounded-lg shadow p-6 mt-3">
+                <label for="phonenumber" class="block text-lg font-medium text-gray-800">Phone Number</label>
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="Enter your phone number"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error"></div>
+            </div>
+            <div class="input-group  bg-white rounded-lg shadow p-6 mt-3">
+                <label for="email" class="block text-lg font-medium text-gray-800">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error"></div>
+            </div>
+            <div class="input-group  bg-white rounded-lg shadow p-6 mt-3">
+                <label for="nic" class="block text-lg font-medium text-gray-800">NIC Number</label>
+                <input type="text" id="nic" name="nic" placeholder="Enter your NIC number"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error"></div>
+            </div>
+            <div class="input-group  bg-white rounded-lg shadow p-6 mt-3">
+                <label for="pwd" class="block text-lg font-medium text-gray-800" >password</label>
+                <input type="password" id="pwd" name="pwd"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error"></div>
+            </div>
+            <div class="input-group  bg-lightblue rounded-lg shadow p-6 mt-3">
+                <label for="cpwd" class="block text-lg font-medium text-gray-800">Retype password</label>
+                <input type="password" id="cpwd" name="cpwd"  class="w-full border-b-2 border-gray-300 focus:border-lightblue outline-none py-2">
+                <div class="error"></div>
+            </div>
+            <button type="submit"  class=" w-full bg-lightblue text-white p-2 rounded-md font-medium mt-3">Submit</button>
+        </form>
+
+    </div>
+ <script src="./form.js"  ></script>    
+</body>
+</html>
